@@ -12,7 +12,7 @@ namespace Explorando.Models
 
         public string Nome { 
             
-            get => _nome;
+            get => _nome.ToUpper();
 
             set {
 

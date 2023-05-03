@@ -15,7 +15,6 @@
 ```
 
 * Iniciando o repositorio git
-
 ```console
 
     git init -b main
@@ -25,6 +24,15 @@
     git pull --allow-unrelated-histories origin main
 
 ```
+
 * Desabilidar aviso de nulos alterar essa tag no .csproj `<Nullable>disable</Nullable>`
 
 * Encapsulamento: Proteger propriedades de metodos de modificações externas, a não ser que os mesmos passem por uma validação
+
+* Rodar o projeto
+```console
+
+    dotnet run
+
+```
+* Body expressions `get => _nome.ToUpper();`
