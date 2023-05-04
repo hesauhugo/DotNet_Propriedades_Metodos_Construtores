@@ -21,8 +21,17 @@ namespace Explorando.Models
         }
 
         public bool Remover(Pessoa aluno){
-            var removido = Alunos.Remover(aluno);
+            var removido = Alunos.Remove(aluno);
             return removido;
         }
+
+        public void ListarAlunos(){
+            foreach (var aluno in Alunos)
+            {
+                Console.WriteLine(aluno.NomeCompleto);
+            }
+        }
+
+
     }
 }
