@@ -8,8 +8,19 @@ namespace Explorando.Models
     /// </summary>
     public class Pessoa
     {
-        private string _nome;
+        //Construtor sem parametros
+        public Pessoa(){
 
+        }
+
+        //Construtor com parametros
+        public Pessoa(string nome,string sobrenome){
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
+
+        private string _nome;
+        
         public string Nome { 
             
             get => _nome.ToUpper();

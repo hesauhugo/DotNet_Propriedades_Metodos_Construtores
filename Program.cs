@@ -15,13 +15,8 @@
 // pessoa.Idade = -1; //valor menor que zero
 // pessoa.Apresentar();
 
-var pessoa1  = new Pessoa();
-pessoa1.Nome = "Hesau";
-pessoa1.Sobrenome = "Hugo";
-
-var pessoa2  = new Pessoa();
-pessoa2.Nome = "Mario";
-pessoa2.Sobrenome = "Andrade";
+var pessoa1  = new Pessoa("Hesau","Hugo");
+var pessoa2  = new Pessoa("Mario","Andrade");
 
 var cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Ingles";
