@@ -64,3 +64,17 @@
 * O recurso interpolação de cadeia de caracteres baseia-se no recurso formatação composta e fornece uma sintaxe mais legível e conveniente para incluir resultados de expressão formatada em uma cadeia de caracteres de resultado.
 * Para concatenação é possível usar o sinal de `+`
 * A interpolação deixa o código mais legivel
+* Cuidado na interpolação quando o valor é numérico porém está formatado comtipo string 
+
+### Formatando valores monetários
+in:
+```csharp
+    decimal valorMonetario = 1582.40M;
+    string valorMonetarioFormatado = $"{valorMonetario:C}"
+```
+out:
+```console
+    R$ 1.582,40
+```
+* Isso acontece porque o programa pega a cultura do sistema. Ex: Configuração do windows (Region).
+* Atenção ao implementar em sistemas de nuvem pois vai pegar daquela região.
