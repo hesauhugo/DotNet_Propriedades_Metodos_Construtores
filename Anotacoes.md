@@ -36,3 +36,9 @@
 
 ```
 * Body expressions `get => _nome.ToUpper();`
+
+* Modificadores de acesso
+    * Public: O membro é acessível de qualquer lugar, dentro ou fora da classe.
+    * Private: O membro é acessível somente dentro da classe em que é declarado.
+    * Protected: O membro é acessível dentro da classe em que é declarado e também em classes derivadas da classe base.
+    * Internal: O membro é acessível dentro do mesmo assembly (um assembly é um arquivo .dll ou .exe que contém um ou mais módulos de código) em que é declarado.

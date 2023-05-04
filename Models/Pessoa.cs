@@ -35,8 +35,10 @@ namespace Explorando.Models
             }
         }
 
+        public string Sobrenome { get; set; }
+
         public void Apresentar(){
-            Console.WriteLine($"Nome: {Nome}, Idade {Idade}");
+            Console.WriteLine($"Nome: {Nome} {Sobrenome}, Idade {Idade}");
         }
     }
 }
