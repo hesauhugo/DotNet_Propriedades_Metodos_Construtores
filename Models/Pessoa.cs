@@ -24,7 +24,14 @@ namespace Explorando.Models
 
         }
 
-        public int Idade { get; set; }
+        private int _idade ;
+        public int Idade { 
+            get => _idade;
+            set{
+                if(value <0)
+                    throw new ArgumentException("A idade não pode ser menor que zero");
+            }
+        }
 
         public void Apresentar(){
             Console.WriteLine($"Nome: {Nome}, Idade {Idade}");
