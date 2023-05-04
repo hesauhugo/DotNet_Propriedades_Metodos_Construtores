@@ -35,10 +35,25 @@ namespace Explorando.Models
             }
         }
 
-        public string Sobrenome { get; set; }
+        private string _sobrenome;
+        public string Sobrenome { 
+            
+            get => _sobrenome.ToUpper();
 
+            set {
+
+                if(value =="")
+                    throw new ArgumentException("O sobrenome não pode ser vazio");
+
+                _sobrenome = value;
+            } 
+        }
+
+        public string NomeCompleto { get => Nome + " " + Sobrenome; }
+        
         public void Apresentar(){
-            Console.WriteLine($"Nome: {Nome} {Sobrenome}, Idade {Idade}");
+            Console.WriteLine($"Nome: {Nome} , Idade {Idade}");
+            Console.WriteLine($"Nome Completo: {NomeCompleto}, Idade {Idade}");
         }
     }
 }

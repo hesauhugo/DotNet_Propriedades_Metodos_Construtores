@@ -17,6 +17,6 @@
 
 var pessoa  = new Pessoa();
 pessoa.Nome = "Hesau";
-pessoa.Sobrenome = "Hugo"
+pessoa.Sobrenome = "Hugo";
 pessoa.Idade = 28;
 pessoa.Apresentar();

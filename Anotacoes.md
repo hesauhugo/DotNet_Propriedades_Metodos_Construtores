@@ -1,21 +1,21 @@
-* Criar o projeto console
-```console
+### Criar o projeto console
+```ps
     dotnet new console
 ```
 
-* Criar pasta
-```console
+### Criar pasta
+```ps
     mkdir <nome da pasta>
 ```
 
-* Criar uma classe
-```console
+### Criar uma classe
+```ps
     # dotnet new --install Vio.Dotnet.Templates
     dotnet new class -n <MinhaClasse>
 ```
 
-* Iniciando o repositorio git
-```console
+### Iniciando o repositorio git
+```ps
 
     git init -b main
     git remote add <nomerepositorio> <url>
@@ -25,20 +25,34 @@
 
 ```
 
-* Desabilidar aviso de nulos alterar essa tag no .csproj `<Nullable>disable</Nullable>`
+### Desabilidar aviso de nulos alterar essa tag no .csproj 
+```html
+    <Nullable>disable</Nullable>
+```
+### Encapsulamento
+* Proteger propriedades de metodos de modificações externas, a não ser que os mesmos passem por uma validação
 
-* Encapsulamento: Proteger propriedades de metodos de modificações externas, a não ser que os mesmos passem por uma validação
-
-* Rodar o projeto
-```console
+### Rodar o projeto
+```ps
 
     dotnet run
 
 ```
-* Body expressions `get => _nome.ToUpper();`
+### Body expressions
+```C#
+    get => _nome.ToUpper();
+```
+### Modificadores de acesso
+* Public: O membro é acessível de qualquer lugar, dentro ou fora da classe.
+* Private: O membro é acessível somente dentro da classe em que é declarado.
+* Protected: O membro é acessível dentro da classe em que é declarado e também em classes derivadas da classe base.
+* Internal: O membro é acessível dentro do mesmo assembly (um assembly é um arquivo .dll ou .exe que contém um ou mais módulos de código) em que é declarado.
 
-* Modificadores de acesso
-    * Public: O membro é acessível de qualquer lugar, dentro ou fora da classe.
-    * Private: O membro é acessível somente dentro da classe em que é declarado.
-    * Protected: O membro é acessível dentro da classe em que é declarado e também em classes derivadas da classe base.
-    * Internal: O membro é acessível dentro do mesmo assembly (um assembly é um arquivo .dll ou .exe que contém um ou mais módulos de código) em que é declarado.
+### Propriedade Readonly 
+```C#
+    public string NomeCompleto { get => Nome + " " + Sobrenome; }
+```
+
+### Método
+* Bloco de código que contém uma série de instruções
+
