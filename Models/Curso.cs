@@ -26,12 +26,34 @@ namespace Explorando.Models
         }
 
         public void ListarAlunos(){
+
+            Console.WriteLine("Listando alunos");
             foreach (var aluno in Alunos)
             {
                 Console.WriteLine(aluno.NomeCompleto);
             }
         }
 
+        public void ListarAlunosConcatenandoComMais(){
 
+            Console.WriteLine("Listando alunos concatenados por +");
+            for (int count = 0; count < Alunos.Count; count++)
+            {
+                string texto = "N" + count + "-" + Alunos[count].NomeCompleto;
+                Console.WriteLine(texto);
+            }
+            
+        }
+
+        public void ListarAlunosInterpolando(){
+
+            Console.WriteLine("Listando alunos interpolando");
+            for (int count = 0; count < Alunos.Count; count++)
+            {
+                string texto = $"N{count} - {Alunos[count].NomeCompleto}";
+                Console.WriteLine(texto);
+            }
+            
+        }
     }
 }

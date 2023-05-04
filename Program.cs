@@ -26,4 +26,5 @@ cursoDeIngles.Alunos = new List<Pessoa>() ;
 cursoDeIngles.AdicionarAluno(pessoa1) ;
 cursoDeIngles.AdicionarAluno(pessoa2) ;
 cursoDeIngles.ListarAlunos() ;
-
+cursoDeIngles.ListarAlunosConcatenandoComMais();
+cursoDeIngles.ListarAlunosInterpolando();

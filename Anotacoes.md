@@ -62,3 +62,5 @@
 ### Interpolação de strings
 * .[https://learn.microsoft.com/pt-br/dotnet/csharp/tutorials/string-interpolation]
 * O recurso interpolação de cadeia de caracteres baseia-se no recurso formatação composta e fornece uma sintaxe mais legível e conveniente para incluir resultados de expressão formatada em uma cadeia de caracteres de resultado.
+* Para concatenação é possível usar o sinal de `+`
+* A interpolação deixa o código mais legivel
