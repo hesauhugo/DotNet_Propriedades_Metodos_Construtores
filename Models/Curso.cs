@@ -50,7 +50,7 @@ namespace Explorando.Models
             Console.WriteLine("Listando alunos interpolando");
             for (int count = 0; count < Alunos.Count; count++)
             {
-                string texto = $"N{count} - {Alunos[count].NomeCompleto}";
+                string texto = $"N{count+1} - {Alunos[count].NomeCompleto}";
                 Console.WriteLine(texto);
             }
             
