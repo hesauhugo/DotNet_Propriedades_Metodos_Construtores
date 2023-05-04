@@ -19,5 +19,10 @@ namespace Explorando.Models
             int quantidade = Alunos.Count();
             return quantidade;
         }
+
+        public bool Remover(Pessoa aluno){
+            var removido = Alunos.Remover(aluno);
+            return removido;
+        }
     }
 }
