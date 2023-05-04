@@ -5,20 +5,20 @@
 
 ### Criar pasta
 ```ps
-    mkdir <nome da pasta>
+    mkdir [NomeDaPasta]
 ```
 
 ### Criar uma classe
 ```ps
     # dotnet new --install Vio.Dotnet.Templates
-    dotnet new class -n <MinhaClasse>
+    dotnet new class -n [MinhaClasse]
 ```
 
 ### Iniciando o repositorio git
 ```ps
 
     git init -b main
-    git remote add <nomerepositorio> <url>
+    git remote add [NomerDORepositorio] [url]
     git push -u origin main
     git config credential.username hesauhugo
     git pull --allow-unrelated-histories origin main
