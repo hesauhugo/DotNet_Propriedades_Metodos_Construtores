@@ -78,3 +78,131 @@ out:
 ```
 * Isso acontece porque o programa pega a cultura do sistema. Ex: Configuração do windows (Region).
 * Atenção ao implementar em sistemas de nuvem pois vai pegar daquela região.
+
+
+### Formatando a Cultura
+
+in:
+```csharp
+    CultureInfo.DefaultThreadCUrrentCUlture = new CultureInfo("en-US")
+    decimal valorMonetario = 1582.40M;
+    string valorMonetarioFormatado = $"{valorMonetario:C}"
+```
+out:
+```console
+    $ 1,582.40
+```
+
+### Cultura Personalizada
+
+in:
+```csharp
+    CultureInfo.DefaultThreadCUrrentCUlture = new CultureInfo("en-US")
+    decimal valorMonetario = 1582.40M;
+    valorMonetarioFormatado.ToString("C",CultureInfo.CreateSpecificCulture("pt-BR"))"
+```
+out:
+```console
+    R$ 1.582,40
+```
+
+### Números e Porcentagem
+* Uma casa decimal
+
+in:
+```csharp
+    
+    decimal valorMonetario = 1582.40M;
+    valorMonetarioFormatado.ToString("N1")
+
+```
+out:
+```console
+    R$ 1.582,4
+```
+
+* Porcentagem
+
+in:
+```csharp
+    
+    double porcentagem = .3421;
+    valorMonetarioFormatado.ToString("P")
+
+```
+out:
+```console
+    34,21%
+```
+
+* Digitos
+
+in:
+```csharp
+    
+    double digitos = 123456;
+    valorMonetarioFormatado.ToString("##-##-##")
+
+```
+out:
+```console
+    12-34-56
+```
+### Formatação Tipo DateTime
+* Data Completa
+
+in:
+```csharp
+    
+    DataTime data = new DataTime.Now;
+    valorMonetarioFormatado.ToString("dd/MM/yyyy HH:mm")
+
+```
+out:
+```console
+    17/04/2022 18:30
+```
+
+* Data Curta
+
+in:
+```csharp
+    
+    DataTime data = new DataTime.Now;
+    valorMonetarioFormatado.ToShortDateString()
+
+```
+out:
+```console
+    17/04/2022 
+```
+* Hora Curta
+
+in:
+```csharp
+    
+    DataTime data = new DataTime.Now;
+    valorMonetarioFormatado.ToShortTimeString()
+
+```
+out:
+```console
+    18:30
+```
+
+* Convertendo Datas
+
+in:
+```csharp
+    var dataString = "2022-13-17 18:00";
+    DataTime.TryParseExact(dataString,
+                            "yyyy-MM-dd HH:mm",
+                            CultureInfo.InvariantCulture,
+                            DateTimeStyles.None,
+                            out DataTime data
+                            );
+```
+out:
+```console
+    01/01/0001 00:00:00
+```
