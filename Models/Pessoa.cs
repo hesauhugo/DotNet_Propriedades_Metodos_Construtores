@@ -30,6 +30,8 @@ namespace Explorando.Models
             set{
                 if(value <0)
                     throw new ArgumentException("A idade não pode ser menor que zero");
+
+                _idade=value;
             }
         }
 
