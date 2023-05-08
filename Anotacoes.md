@@ -206,3 +206,12 @@ out:
 ```console
     01/01/0001 00:00:00
 ```
+
+### Referências
+1. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/properties]
+2. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/methods]
+3. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/constructors]
+5. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/properties]
+6. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/methods]
+7. .[https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/constructors]
+
